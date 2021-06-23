@@ -449,15 +449,18 @@ while (j < 48) {
       update();
       // showscreen();
       imgbox.addEventListener("click", function () {
-        if (container.childElementCount == 1) {
-          removesrchbar();
-        } else {
+        if (container.childElementCount > 1) {
           let x = arr_btntxt.indexOf(buttontxt);
           console.log(x);
           container.removeChild(box);
           if (x > -1) {
             arr_btntxt.splice(x, 1);
           }
+        } else if(container.childElementCount = 1){
+          removesrchbar();
+        }
+        else{
+          removesrchbar();
         }
         update();
         // showscreen();
