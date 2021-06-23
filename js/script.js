@@ -457,10 +457,10 @@ while (j < 48) {
             arr_btntxt.splice(x, 1);
           }
         } else if(container.childElementCount = 1){
-          removesrchbar();
+          window.location.reload(true);
         }
         else{
-          removesrchbar();
+         window.location.reload(true);
         }
         update();
         // showscreen();
